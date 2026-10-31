@@ -1017,11 +1017,14 @@ section {
 
 ## OUTPUT
 
-![alt text](<Screenshot 2026-10-31 115942.png>) 
-![alt text](<Screenshot 2026-10-31 115958.png>) 
-![alt text](<Screenshot 2026-10-31 120125.png>)
-![alt text](<Screenshot 2026-10-31 120138.png>)
+<img width="1917" height="792" alt="Screenshot 2026-10-31 115942" src="https://github.com/user-attachments/assets/e358c5c1-0c02-4463-9019-e656170f9e86" />
 
+<img width="1917" height="832" alt="Screenshot 2026-10-31 115958" src="https://github.com/user-attachments/assets/c84f3e70-34df-4a41-8d7e-eb80f9ab6632" />
+
+<img width="1917" height="842" alt="Screenshot 2026-10-31 120125" src="https://github.com/user-attachments/assets/873d92af-ab0c-4a0a-b5c3-fbcda9855e98" />
+
+
+<img width="1917" height="860" alt="Screenshot 2026-10-31 120138" src="https://github.com/user-attachments/assets/b89a92f5-ae46-43b7-b1cc-ee11d79a62d5" />
 
 
 ## RESULT
