@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkmate Guild | Premium Chess Gear & Services</title>
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-chess-knight"></i>
+        <span>CHECKMATE GUILD</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#account">Account</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" onclick="toggleCart()">
+          <i class="fa-solid fa-shopping-bag"></i>
+          <span class="cart-badge" id="cartCount">2</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOMEPAGE SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <i class="fa-solid fa-crown"></i> Official FIDE Supplier
+      </div>
+      <h1 class="hero-title">Master the Board with <span>Grandmaster</span> Precision</h1>
+      <p class="hero-desc">Discover handcrafted luxury Staunton sets, digital tournament clocks, and elite training literature for serious players.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary"><i class="fa-solid fa-chess"></i> Explore Shop</a>
+        <a href="#about" class="btn btn-secondary">Learn Story</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-card">
+        <i class="fa-solid fa-chess-king"></i>
+        <h3 class="brand-font">Heritage Staunton No. 6</h3>
+        <p style="color: var(--text-muted); margin: 0.5rem 0 1rem; font-size: 0.9rem;">Triple-Weighted Ebony & Boxwood</p>
+        <span class="product-price">$249.00</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section id="products">
+    <div class="section-header">
+      <h2>Featured Gear & Services</h2>
+      <p>Precision-engineered equipment approved for International FIDE competitions.</p>
+    </div>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="product-img"><i class="fa-solid fa-chess-board"></i></div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Luxury Mahogany Board</div>
+            <p style="color:var(--text-muted); font-size:0.85rem;">2.25 inch tournament squares</p>
+          </div>
+          <div class="product-meta">
+            <span class="product-price">$129.00</span>
+            <button class="btn btn-primary" style="padding: 0.5rem 1rem;" onclick="toggleCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="product-img"><i class="fa-solid fa-stopwatch"></i></div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">DGT 2010 Digital Clock</div>
+            <p style="color:var(--text-muted); font-size:0.85rem;">FIDE Approved timer preset modes</p>
+          </div>
+          <div class="product-meta">
+            <span class="product-price">$89.50</span>
+            <button class="btn btn-primary" style="padding: 0.5rem 1rem;" onclick="toggleCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="product-img"><i class="fa-solid fa-book-open"></i></div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Grandmaster Openings Vol. 1</div>
+            <p style="color:var(--text-muted); font-size:0.85rem;">Hardcover masterclass guide</p>
+          </div>
+          <div class="product-meta">
+            <span class="product-price">$45.00</span>
+            <button class="btn btn-primary" style="padding: 0.5rem 1rem;" onclick="toggleCart()">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="product-img"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">1-on-1 GM Coaching</div>
+            <p style="color:var(--text-muted); font-size:0.85rem;">60-minute interactive game analysis</p>
+          </div>
+          <div class="product-meta">
+            <span class="product-price">$120.00</span>
+            <button class="btn btn-primary" style="padding: 0.5rem 1rem;" onclick="alert('Coaching session booked!')">Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <div class="hero-tag"><i class="fa-solid fa-shield-halved"></i> Excellence Since 2012</div>
+        <h2>Crafting Royal Equipment for Chess Connoisseurs</h2>
+        <p>Checkmate Guild was founded by international masters with a single mission: to create competition-grade chess sets that blend artisan woodwork with modern tournament precision.</p>
+        <div class="about-stats">
+          <div class="stat-box">
+            <span class="stat-number">50K+</span>
+            <span class="stat-label">Boards Shipped</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">FIDE Compliant</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">User Rating</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <i class="fa-solid fa-chess-rook"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & USER ACCOUNT SECTION -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Contact & User Portal</h2>
+      <p>Connect with our chess equipment experts or access your member account.</p>
+    </div>
+    <div class="form-flex-container">
+      <!-- Contact Form -->
+      <div class="form-card">
+        <h3><i class="fa-solid fa-envelope-open-text" style="color: var(--gold-primary);"></i> Get in Touch</h3>
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" placeholder="e.g., Garry Kasparov">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label>Inquiry Message</label>
+          <textarea rows="4" placeholder="How can we help you today?"></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="alert('Message Sent!')">Send Message</button>
+      </div>
+
+      <!-- User Account Form -->
+      <div class="form-card" id="account">
+        <h3><i class="fa-solid fa-user-shield" style="color: var(--gold-primary);"></i> Member Portal</h3>
+        <div class="form-group">
+          <label>Username or FIDE ID</label>
+          <input type="text" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••">
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; color: var(--text-muted);">
+          <label><input type="checkbox"> Remember me</label>
+          <a href="#" style="color: var(--gold-primary);">Forgot password?</a>
+        </div>
+        <button class="btn btn-primary" onclick="alert('Logged in successfully!')">Sign In</button>
+        <button class="btn btn-secondary" onclick="alert('Registration form opened!')">Create New Account</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="logo">
+          <i class="fa-solid fa-chess-knight"></i>
+          <span>CHECKMATE GUILD</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">
+          Premier destination for luxury chess sets, tournament clocks, and grandmaster literature.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Shop Products</a></li>
+          <li><a href="#about">About Our Craft</a></li>
+          <li><a href="#contact">Support Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect With Us</h4>
+        <div class="social-links">
+          <a href="#" class="social-btn"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Checkmate Guild Inc. All rights reserved.</p>
+      <p>Designed with CSS Flexbox Layout</p>
+    </div>
+  </footer>
+
+  <!-- INTERACTIVE CART OVERLAY & DRAWER -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-shopping-bag"></i> Your Cart</h3>
+      <button class="close-cart-btn" onclick="toggleCart()">&times;</button>
+    </div>
+    
+    <div class="cart-body">
+      <div class="cart-item">
+        <div>
+          <div class="cart-item-title">Heritage Staunton No. 6</div>
+          <div class="cart-item-price">$249.00</div>
+        </div>
+        <span class="cart-item-qty">x1</span>
+      </div>
+      <div class="cart-item">
+        <div>
+          <div class="cart-item-title">DGT 2010 Digital Clock</div>
+          <div class="cart-item-price">$89.50</div>
+        </div>
+        <span class="cart-item-qty">x1</span>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span>$338.50</span>
+      </div>
+      <button class="btn btn-primary" style="width: 100%; justify-content: center;" onclick="alert('Proceeding to Checkout!')">
+        Checkout
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function toggleCart() {
+      document.getElementById('cartDrawer').classList.toggle('active');
+      document.getElementById('cartOverlay').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
